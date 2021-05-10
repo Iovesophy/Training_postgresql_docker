@@ -1,5 +1,5 @@
-.PHONY: main
-main: docker-build docker-run
+.PHONY: all
+all: docker-build docker-run
 
 .PHONY: docker-build
 docker-build:
@@ -7,4 +7,4 @@ docker-build:
 
 .PHONY: docker-run
 docker-run:
-	docker-compose exec db bash -c "psql -U postgres"
+	docker-compose exec db psql -U postgres
