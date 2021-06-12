@@ -3,7 +3,7 @@ services:
   db:
     build: .
     ports:
-      - 5432:5432
+      - 5435:5432
     restart: always
     environment:
       POSTGRES_USER: postgres
